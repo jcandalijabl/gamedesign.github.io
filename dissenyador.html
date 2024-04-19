@@ -9,32 +9,42 @@
 </head>
 <body>
     <div class="fondo">
-        <img draggable="false" src="./imatges/sobres-2.jpg" alt="">
-        <img draggable="false" id="fons-brillo" src="./imatges/sobres3.png" alt="">
+        <!-- <img src="./imatges copy/sobres-2.jpg" alt=""> -->
+        <img draggable="false" id="disseny-base" src="./imatges/sobres-2-final-amunt.png" alt="">
+        <img draggable="false" id="diss-glow-amunt" src="./imatges/glow-amunt.png" alt="">
+        <div class="div-rotate-cont">
+            <img draggable="false" id="disseny-rotate-bg" class="rotate" src="./imatges/sobres-2-final-avall.png" alt="">
+            <img draggable="false" id="diss-glow-avall-rotate" class="rotate" src="./imatges/glow-avall-rotate2.png" alt="">
+        </div>
+        <img draggable="false" id="diss-glow-avall" class="shine" src="./imatges/glow-avall.png" alt="">
+
     </div>
+
+    <!-- <div class="prova1">
+        <div class="prova2">
+
+        </div>
+    </div> -->
 
     <div class="div-sobres">
         <div class="sobre">
-            <img draggable="false" src="" alt="">
-            <img draggable="false" id="sobre1" src="./imatges/forged-in-the-barrens-pack-opener.png" onclick="onclickSobre1()" alt="">
+            <img id="sobre1" class="shake arrastra" src="./imatges/forged-in-the-barrens-pack-opener.png" onclick="onclickSobre1()" onmouseover="onmouseoverDissGlow()" onmouseout="onmouseoutDissGlow()" alt="">
         </div>
 
         <div class="sobre">
-            <img draggable="false" src="" alt="">
-            <img draggable="false" id="sobre2" src="./imatges/darkmoon-faire-pack.png" onclick="onclickSobre2()" alt="">
+            <img id="sobre2" class="shake arrastra" src="./imatges/darkmoon-faire-pack.png" onclick="onclickSobre2()" onmouseover="onmouseoverDissGlow()" onmouseout="onmouseoutDissGlow()" alt="">
         </div>
 
         <div class="sobre">
-            <img draggable="false" src="" alt="">
-            <img draggable="false" id="sobre3" src="./imatges/uldum-pack.png" onclick="onclickSobre3()" alt="">
+            <img id="sobre3" class="shake arrastra" src="./imatges/uldum-pack.png" onclick="onclickSobre3()" onmouseover="onmouseoverDissGlow()" onmouseout="onmouseoutDissGlow()" alt="">
         </div>
     </div>
 
     <div class="div-sobres-in">
-        <img draggable="false" id="sobre-in-1" src="./imatges/forged-in-the-barrens-pack-opener.png" onmouseover="mouseoverSobre1()" onmouseout="mouseoutSobre1()" onclick="window.location.href='./formalitzar-conceptes.html'" alt="">
-        <img draggable="false" id="sobre-in-2" src="./imatges/darkmoon-faire-pack.png" onmouseover="mouseoverSobre2()" onmouseout="mouseoutSobre2()" onclick="window.location.href='./cerca-idees.html'" alt="">
-        <img draggable="false" id="sobre-in-3" src="./imatges/uldum-pack.png" onmouseover="mouseoverSobre3()" onmouseout="mouseoutSobre3()" onclick="window.location.href='./concepte-diversio.html'" alt="">
-        <img draggable="false" id="brillo-blau" src="./imatges/brillo-blau4.png" alt="">
+        <img id="sobre-in-1" src="./imatges/forged-in-the-barrens-pack-opener.png" onmouseover="mouseoverSobre1()" onmouseout="mouseoutSobre1()" alt="">
+        <img id="sobre-in-2" src="./imatges/darkmoon-faire-pack.png" onmouseover="mouseoverSobre2()" onmouseout="mouseoutSobre2()" alt="">
+        <img id="sobre-in-3" src="./imatges/uldum-pack.png" onmouseover="mouseoverSobre3()" onmouseout="mouseoutSobre3()" alt="">
+        <img id="brillo-blau" src="./imatges/brillo-blau4.png" alt="">
     </div>
     <div class="div-etiquetes">
         <img id="etiqueta1" src="./imatges/form_con_joc.png" alt="">
