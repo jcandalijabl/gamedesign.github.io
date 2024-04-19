@@ -5367,3 +5367,261 @@ function onClickLevel17() {
     x.style.visibility = "visible";
     x.style.pointerEvents = "all";
 }
+
+// EL dissenyador 2
+
+function onclickSobre1() {
+    var x = document.getElementById("sobre-in-1");
+    x.style.visibility = "visible";
+    x.style.transition = "all 0s";
+    var x = document.getElementById("sobre-in-2");
+    x.style.visibility = "hidden";
+    x.style.transition = "all 0s";
+    var x = document.getElementById("sobre-in-3");
+    x.style.visibility = "hidden";
+    x.style.transition = "all 0s";
+
+    //Vinyetes
+    var x = document.getElementById("etiqueta1");
+    x.style.transition = "all 0s";
+    x.style.visibility = "visible";
+    var x = document.getElementById("etiqueta2");
+    x.style.transition = "all 0s";
+    x.style.visibility = "hidden";
+    var x = document.getElementById("etiqueta3");
+    x.style.transition = "all 0s";
+    x.style.visibility = "hidden";
+
+}
+function mouseoverSobre1() {
+    var x = document.getElementById("sobre-in-1");
+    x.style.transition = "all 0.2s";
+    x.style.cursor = "pointer";
+    x.style.transform = "scale(1.1) rotate(-5deg)";
+
+    var x = document.getElementById("brillo-blau");
+    x.style.visibility = "visible";
+    x.style.transition = "0.4s";
+    var x = document.getElementById("brillo-blau");
+    x.style.transform = "scale(8)";
+
+    // El fons comença a brillar
+
+    var x = document.getElementById("fons-brillo");
+    x.style.transition = "2s";
+    x.style.opacity = "100%";
+
+    // Desapareix la vinyeta (temporalment)
+
+    var x = document.getElementById("etiqueta1");
+    x.style.transition = "0.5s";
+    x.style.opacity = "0%";
+}
+function mouseoutSobre1() {
+    var x = document.getElementById("sobre-in-1");
+    x.style.transition = "all 0.2s";
+    x.style.cursor = "pointer";
+    x.style.transform = "scale(1) rotate(0deg)";
+
+    var x = document.getElementById("brillo-blau");
+    x.style.transform = "scale(0)";
+    x.style.visibility = "hidden";
+
+    // El brillo del fons comença a desapareixer
+
+    var x = document.getElementById("fons-brillo");
+    x.style.transition = "1s";
+    x.style.opacity = "0%";
+
+    // Apareix la vinyeta (Fins canvi)
+
+    var x = document.getElementById("etiqueta1");
+    x.style.transition = "1s";
+    x.style.opacity = "100%";
+}
+
+
+
+function onclickSobre2() {
+    var x = document.getElementById("sobre-in-1");
+    x.style.visibility = "hidden";
+    x.style.transition = "all 0s";
+    var x = document.getElementById("sobre-in-2");
+    x.style.visibility = "visible";
+    x.style.transition = "all 0s";
+    var x = document.getElementById("sobre-in-3");
+    x.style.visibility = "hidden";
+    x.style.transition = "all 0s";
+
+    //Vinyetes
+    var x = document.getElementById("etiqueta1");
+    x.style.transition = "all 0s";
+    x.style.visibility = "hidden";
+    var x = document.getElementById("etiqueta2");
+    x.style.transition = "all 0s";
+    x.style.visibility = "visible";
+    var x = document.getElementById("etiqueta3");
+    x.style.transition = "all 0s";
+    x.style.visibility = "hidden";
+}
+function mouseoverSobre2() {
+    var x = document.getElementById("sobre-in-2");
+    x.style.transition = "all 0.2s";
+    x.style.cursor = "pointer";
+    x.style.transform = "scale(1.1) rotate(-5deg)";
+    
+    var x = document.getElementById("brillo-blau");
+    x.style.visibility = "visible";
+    x.style.transition = "0.4s";
+    var x = document.getElementById("brillo-blau");
+    x.style.transform = "scale(8)";
+
+    // El fons comença a brillar
+
+    var x = document.getElementById("fons-brillo");
+    x.style.transition = "2s";
+    x.style.opacity = "100%";
+
+    // Desapareix la vinyeta (temporalment)
+
+    var x = document.getElementById("etiqueta2");
+    x.style.transition = "0.5s";
+    x.style.opacity = "0%";
+}
+function mouseoutSobre2() {
+    var x = document.getElementById("sobre-in-2");
+    x.style.transition = "all 0.2s";
+    x.style.cursor = "pointer";
+    x.style.transform = "scale(1) rotate(0deg)";
+
+    var x = document.getElementById("brillo-blau");
+    x.style.transform = "scale(0)";
+    x.style.visibility = "hidden";
+
+    // El brillo del fons comença a desapareixer
+
+    var x = document.getElementById("fons-brillo");
+    x.style.transition = "1s";
+    x.style.opacity = "0%";
+
+    // Apareix la vinyeta (Fins canvi)
+
+    var x = document.getElementById("etiqueta2");
+    x.style.transition = "1s";
+    x.style.opacity = "100%";
+}
+
+
+
+function onclickSobre3() {
+    var x = document.getElementById("sobre-in-1");
+    x.style.visibility = "hidden";
+    x.style.transition = "all 0s";
+    var x = document.getElementById("sobre-in-2");
+    x.style.visibility = "hidden";
+    x.style.transition = "all 0s";
+    var x = document.getElementById("sobre-in-3");
+    x.style.visibility = "visible";
+    x.style.transition = "all 0s";
+
+    //Vinyetes
+    var x = document.getElementById("etiqueta1");
+    x.style.transition = "all 0s";
+    x.style.visibility = "hidden";
+    var x = document.getElementById("etiqueta2");
+    x.style.transition = "all 0s";
+    x.style.visibility = "hidden";
+    var x = document.getElementById("etiqueta3");
+    x.style.transition = "all 0s";
+    x.style.visibility = "visible";
+}
+function mouseoverSobre3() {
+    var x = document.getElementById("sobre-in-3");
+    x.style.transition = "all 0.2s";
+    x.style.cursor = "pointer";
+    x.style.transform = "scale(1.1) rotate(-5deg)";
+
+    var x = document.getElementById("brillo-blau");
+    x.style.visibility = "visible";
+    x.style.transition = "0.4s";
+    var x = document.getElementById("brillo-blau");
+    x.style.transform = "scale(8)";
+
+    // El fons comença a brillar
+
+    var x = document.getElementById("fons-brillo");
+    x.style.transition = "2s";
+    x.style.opacity = "100%";
+
+    // Desapareix la vinyeta (temporalment)
+
+    var x = document.getElementById("etiqueta3");
+    x.style.transition = "0.5s";
+    x.style.opacity = "0%";
+}
+function mouseoutSobre3() {
+    var x = document.getElementById("sobre-in-3");
+    x.style.transition = "all 0.2s";
+    x.style.cursor = "pointer";
+    x.style.transform = "scale(1) rotate(0deg)";
+
+    var x = document.getElementById("brillo-blau");
+    x.style.transform = "scale(0)";
+    x.style.visibility = "hidden";
+
+    // El brillo del fons comença a desapareixer
+
+    var x = document.getElementById("fons-brillo");
+    x.style.transition = "1s";
+    x.style.opacity = "0%";
+
+    // Apareix la vinyeta (Fins canvi)
+
+    var x = document.getElementById("etiqueta3");
+    x.style.transition = "1s";
+    x.style.opacity = "100%";
+}
+
+function movGlowRotate() {
+    var x = document.getElementById("glow-rotate");
+    x.style.transition = "all 7s";
+    x.style.transform = "rotate(360deg)";
+    var x = document.getElementById("glow-simple");
+    x.style.transition = "all 1s";
+    x.style.opacity = "100%";
+}
+function mouGlowRotate() {
+    var x = document.getElementById("glow-rotate");
+    x.style.transition = "all 7s";
+    x.style.transform = "rotate(-360deg)";
+    var x = document.getElementById("glow-simple");
+    x.style.transition = "all 1s";
+    x.style.opacity = "0%";
+}
+
+// El Dissenyador Hovers
+// ids:
+// #diss-glow-amunt, #diss-glow-avall-rotate, #diss-glow-avall
+
+function onmouseoverDissGlow() {
+    var x = document.getElementById("diss-glow-amunt");
+    x.style.transition = "all 1s";
+    x.style.opacity = "100%";
+    var x = document.getElementById("diss-glow-avall-rotate");
+    x.style.transition = "all 5s";
+    x.style.opacity = "100%";
+    var x = document.getElementById("diss-glow-avall");
+    x.style.transition = "all 1s";
+    x.style.opacity = "100%";
+}
+function onmouseoutDissGlow() {
+    var x = document.getElementById("diss-glow-amunt");
+    x.style.transition = "all 1s";
+    x.style.opacity = "0%";
+    var x = document.getElementById("diss-glow-avall-rotate");
+    x.style.transition = "all 1s";
+    x.style.opacity = "0%";
+    var x = document.getElementById("diss-glow-avall");
+    x.style.transition = "all 1s";
+    x.style.opacity = "0%";
+}
