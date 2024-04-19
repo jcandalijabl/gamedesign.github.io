@@ -5582,22 +5582,22 @@ function mouseoutSobre3() {
     x.style.opacity = "100%";
 }
 
-function movGlowRotate() {
-    var x = document.getElementById("glow-rotate");
-    x.style.transition = "all 7s";
-    x.style.transform = "rotate(360deg)";
-    var x = document.getElementById("glow-simple");
-    x.style.transition = "all 1s";
-    x.style.opacity = "100%";
-}
-function mouGlowRotate() {
-    var x = document.getElementById("glow-rotate");
-    x.style.transition = "all 7s";
-    x.style.transform = "rotate(-360deg)";
-    var x = document.getElementById("glow-simple");
-    x.style.transition = "all 1s";
-    x.style.opacity = "0%";
-}
+// function movGlowRotate() {
+//     var x = document.getElementById("glow-rotate");
+//     x.style.transition = "all 7s";
+//     x.style.transform = "rotate(360deg)";
+//     var x = document.getElementById("glow-simple");
+//     x.style.transition = "all 1s";
+//     x.style.opacity = "100%";
+// }
+// function mouGlowRotate() {
+//     var x = document.getElementById("glow-rotate");
+//     x.style.transition = "all 7s";
+//     x.style.transform = "rotate(-360deg)";
+//     var x = document.getElementById("glow-simple");
+//     x.style.transition = "all 1s";
+//     x.style.opacity = "0%";
+// }
 
 // El Dissenyador Hovers
 // ids:
