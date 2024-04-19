@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./dissenyhud.css">
+
+    <title>Disseny del Hud</title>
+</head>
+<body>
+    <div class="fondo">
+        <img draggable="false" class="grandaria" src="./imatges/hud-base.jpg" alt="no">
+
+        <img draggable="false" id="hud-historial-sobre" class="grandaria" src="./imatges/hud-historial-sobre.png" alt="">
+        <img draggable="false" id="hud-historial-glow" src="./imatges/hud-historial-glow2.png" alt="">
+
+        <img draggable="false" id="hud-mana-sobre" src="./imatges/glow-mana-hs3-sobre.png" alt="">
+        <img draggable="false" id="hud-mana-glow" src="./imatges/hud-mana-glow3.png" alt="">
+
+        <img draggable="false" id="hud-pj-sobre" src="./imatges/glow-mana-hs2-pj.png" alt="">
+    </div>
+    <div class="div-buttons">
+        <button id="boto-historial" onmouseover="onmouseoverHudHistory()" onmouseout="onmouseoutHudHistory()"></button>
+        <button id="boto-mana" onmouseover="onmouseoverHudMana()" onmouseout="onmouseoutHudMana()"></button>
+        <button id="boto-pj" onmouseover="onmouseoverHudPj()" onmouseout="onmouseoutHudPj()"></button>
+    </div>
+    <div id="div-popup">
+        <img src="./imatges/popup-hud.png" alt="">
+    </div>
+
+    <script src="./javascript/funcions.js"></script>
+</body>
+</html>

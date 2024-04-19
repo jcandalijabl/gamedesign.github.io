@@ -1,0 +1,180 @@
+.fons-blur {
+    position: absolute;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-color: rgba(0,0,0, 0.6);
+    z-index: 2000;
+
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(./imatges/2.png);
+    background-repeat: no-repeat;
+
+    visibility: hidden;
+    pointer-events: none;
+}
+.fons-blur2 {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.6);
+    z-index: 2001;
+    visibility: hidden;
+}
+
+
+.contenidor-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+.contenidor-1 img {
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    z-index: 2100;
+
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.div-buttons2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+    width: 100%;
+    height: 100%;
+
+    visibility: hidden;
+    z-index: 2500;
+
+    flex-direction: column;
+    
+}
+.cont1 {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cont2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.cont3 {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+}
+.buttonDiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 5000;
+
+    background-color: transparent;
+    border: none;
+}
+.buttonImg  {
+    background-color: transparent;
+    cursor: default;
+    z-index: 3004;
+
+    border-radius: 50%;
+}
+.buttonImg:hover {
+    cursor: pointer;
+}
+.glow {
+    opacity: 0%;
+    width: 250px;
+    z-index: 3003;
+    position: absolute;
+
+    transition: 0.3s;
+}
+
+.Titol {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    background-color: transparent;
+    position: absolute;
+    visibility: hidden;
+}
+
+.div-apartats {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    visibility: hidden;
+    z-index: 4000;
+}
+.apartat, .apartat-contingut {
+    position: absolute;
+    width: 600px;
+    height: 670px;
+    border-radius: 30px;
+    overflow: visible;
+
+    display: flex;
+    justify-content: center;
+
+    top: 0;
+    
+
+    visibility: hidden;
+}
+.apartat-contingut {
+    z-index: 6000;
+    visibility: hidden;
+    height: auto;
+}
+.apartat-titol, .apartat-imatges, .apartat-text {
+    display: flex;
+    justify-content: center;
+}
+/* .apartat img {
+    width: 800px;
+} */
+.apartat-contingut img {
+    width: 500px;
+}
+.surt2 {
+    width: auto;
+    height: auto;
+    z-index: 5000;
+    position: absolute;
+    bottom: 30px;
+}
+.aImg {
+    width: auto;
+}
+#a1 {
+    background-color: transparent;
+    width: 100%;
+}

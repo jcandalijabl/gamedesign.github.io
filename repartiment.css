@@ -1,0 +1,149 @@
+@font-face {
+    font-family: SamuraiWarrior;
+    src: url(./fonts/SamuraiWarrior-mL27a.otf);
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    font-family: 'SamuraiWarrior';
+    font-size: 40px;
+}
+*{
+    cursor: url(./cursor/hs-cursor.png), auto;
+}
+.fondo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    z-index: 100;
+}
+.fondo img{
+    z-index: 3000;
+    height: 100%;
+    position: absolute;
+
+    /* Característic (No es de la base) */
+    right: 0;
+}
+
+/* Contingut */
+
+
+
+.center-content {
+    z-index: 200;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.center-content img {
+    z-index: 200;
+    width: 15%;
+}
+#bandera {
+    position: absolute;
+    z-index: 99;
+    width: 20%;
+}
+
+/* Info */
+
+#info {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50%;
+}
+
+/* Logos HTML, CSS, JS */
+
+#div-apartats {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+    right: 28%;
+}
+#div-apartats img {
+    width: 100%;
+}
+
+/* Curs */
+
+.curs {
+    display: flex;
+    align-items: center;
+    z-index: 300;
+    flex-direction: column;
+    margin: 0;
+    font-size: 30px;
+}
+
+/* Text HTML, CSS, JS */
+
+#autor-html {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+#autor-css {
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+}
+#autor-js {
+    position: absolute;
+    top: 10%;
+    right: 8%;
+}
+
+/* Contingut */
+
+#div-content {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div-content div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+}
+#div-content img {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+}

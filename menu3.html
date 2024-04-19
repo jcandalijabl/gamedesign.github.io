@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./menu2.css">
+
+    <title>Game Design Menu 3</title>
+</head>
+<body>
+    <!-- Fondo -->
+
+    <div class="contenidor-fons">
+        <img draggable="false" id="#fons-main-menu" src="./imatges/fons22.jpg" alt="">
+    </div>
+
+    <!-- Brillo botons al apuntar-los -->
+
+    <div class="botons-brillo">
+        <img draggable="false" id="boto-brillo-1" src="./imatges/boto-1.png" alt="">
+        <img draggable="false" id="boto-brillo-2" src="./imatges/boto-2.png" alt="">
+        <img draggable="false" id="boto-brillo-3" src="./imatges/boto-3.png" alt="">
+        <img draggable="false" id="boto-brillo-4" src="./imatges/boto-4.png" alt="">
+    </div>
+
+    <!-- En quina part estic -->
+
+    <div class="cont-menu-menu">
+        <img draggable="false" class="menu-vertical" src="./imatges/menu-vertical.png" alt="">
+        <img draggable="false" id="enQuinaPart1" class="enQuinaPart shine" onclick="window.location.href='./menu.html'" src="./imatges/hearthstone_llibre_capsa.png" alt="">
+        <img draggable="false" id="enQuinaPart2" class="enQuinaPart shine" src="./imatges/Runestone_prior_24.2.webp" alt="">
+        <a href="http://elservidor.cat/" target="_blank">
+            <img draggable="false" id="enQuinaPart3" class="enQuinaPart shine" src="/imatges/logo.png" alt="">
+        </a>
+        <img draggable="false" id="enQuinaPart4" class="enQuinaPart shine" src="/imatges/foc-gema.png" alt="">
+    </div>
+
+    <!-- Botons -->
+
+    <div class="div-buttons" id="botons2">
+        <button class="main2" onclick="window.location.href=''" onmouseover="mouseoverButton1Menu2()" onmouseout="mouseoutButton1Menu2()"></button>
+        <button class="main1" onclick="window.location.href=''" onmouseover="mouseoverButton2Menu2()" onmouseout="mouseoutButton2Menu2()"></button>
+        <button class="main1" onclick="onclick3cs()" onmouseover="mouseoverButton3Menu2()" onmouseout="mouseoutButton3Menu2()"></button>
+        <button class="main3" onclick="window.location.href='./levelup.html'" onmouseover="mouseoverButton4Menu2()" onmouseout="mouseoutButton4Menu2()"></button>
+    </div>
+
+    <!-- Crida a fitxer JS -->
+
+    <script src="./javascript/funcions.js"></script>
+</body>
+</html>

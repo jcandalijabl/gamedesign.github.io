@@ -1,0 +1,195 @@
+@font-face {
+    font-family: Belwe;
+    src: url(./fonts/Belwe\ Bold.otf);
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.fondo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+.fondo img{
+    height: 100%;
+    position: absolute;
+}
+#fons-brillo {
+    opacity: 0%;
+    transition: all 5s;
+}
+
+/* 3cs marca d'aigua */
+
+.marca-aigua-3cs {
+    position: absolute;
+    z-index: 2000;
+    width: 5%;
+}
+
+/* Brillo botons next i after */
+
+#fons-brillo-next {
+    visibility: hidden;
+}
+
+/* Botons AFter & Next */
+
+.botons-n-a {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    bottom: 1%;
+    display: flex;
+    justify-content: center;
+}
+.cont1, .cont2 {
+    width: 50%;
+    opacity: 0%;
+}
+.after, .next {
+    height: 100%;
+    width: 10%;
+    border-radius: 30%;
+    border: none;
+}
+.after {
+    margin-left: 45%;
+}
+.next {
+    margin-left: 50%;
+}
+.after:hover, .next:hover {
+    cursor: pointer;
+}
+
+/* Contingut */
+
+.form-conceptes {
+    background-color: transparent;
+    width: 53.5%;
+    height: 80%;
+    position: absolute;
+
+    margin-left: 22.5%;
+    margin-top: 4%;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    font-family: Belwe;
+    color: white;
+}
+.form-conceptes h1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 240%;
+
+    width: 100%;
+
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+}
+.form-conceptes p {
+    position: absolute;
+
+    width: 40%;
+    margin-top: 10%;
+    margin-right: 30%;
+    margin-left: 30%;
+    font-size: 120%;
+
+    display: flex;
+    text-align: center;
+    
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+}
+#cam-p-2 {
+    width: 41%;
+}
+#cam-p-3 {
+    width: 52%;
+}
+#cam-p-5 {
+    width: 82%;
+}
+.form-conceptes img {
+    position: absolute;
+    border: 2px solid black;
+    margin-top: 30%;
+    width: 50%;
+}
+#fixed-cam-img-1, #scroll-cam-img-1, #parallax-cam-img-1, #first-cam-img-1, #third-cam-img-1 {
+    left: 5%;
+}
+#fixed-cam-img-2, #scroll-cam-img-2, #parallax-cam-img-2, #first-cam-img-2, #third-cam-img-2 {
+    right: 5%;
+    margin-top: 33%;
+}
+#controls-cam-img-22 {
+    right: 5%;
+    width: 38%;
+}
+hr {
+    margin-top: 25%;
+    border: 0.3vh solid black;
+    position: absolute;
+    width: 50%;
+    background-color: white;
+    height: 0.3%;
+}
+#cam-hr-2 {
+    margin-top: 26%;
+}
+#cam-hr-3 {
+    margin-top: 26%;
+}
+#cam-hr-4 {
+    margin-top: 24%;
+}
+#cam-hr-5 {
+    margin-top: 27%;
+}
+
+/*  */
+
+#cam-h1-1, #cam-p-1, #cam-hr-1, #fixed-cam-img-1, #fixed-cam-img-2, #prova11 {
+    visibility: visible;
+}
+#cam-h1-2, #cam-p-2, #cam-hr-2, #scroll-cam-img-1, #scroll-cam-img-2, #prova22 {
+    visibility: hidden;
+}
+#cam-h1-3, #cam-p-3, #cam-hr-3, #parallax-cam-img-1, #parallax-cam-img-2, #prova33 {
+    visibility: hidden;
+}
+#cam-h1-4, #cam-p-4, #cam-hr-4, #first-cam-img-1, #first-cam-img-2, #prova44 {
+    visibility: hidden;
+}
+#cam-h1-5, #cam-p-5, #cam-hr-5, #third-cam-img-1, #third-cam-img-2, #prova55 {
+    visibility: hidden;
+}
+
+
+#cam-b-after1, #cam-b-next1, #prova111 {
+    visibility: visible;
+}
+#cam-b-after2, #cam-b-next2, #prova222 {
+    visibility: hidden;
+}
+#cam-b-after3, #cam-b-next3, #prova333 {
+    visibility: hidden;
+}
+#cam-b-after4, #cam-b-next4, #prova444 {
+    visibility: hidden;
+}
+#cam-b-after5, #cam-b-next5, #prova555 {
+    visibility: hidden;
+}

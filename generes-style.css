@@ -1,0 +1,155 @@
+@font-face {
+    font-family: hsfont;
+    src: url(./fonts/LHF\ Uncial\ Caps\ Regular.ttf);
+}
+@font-face {
+    font-family: belwe;
+    src: url(./fonts/Belwe\ Bold.otf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'belwe';
+}
+#fons {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imatges/adwj2.png);
+    margin: 0;
+    background-size: 86vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'hsfont', sans-serif;
+    z-index: 100;
+}
+#fons-extra {
+    width: 100%;
+    height: 100%;
+    background-image: url(./imatges/Feature_News.avif);
+    background-size: cover;
+    position: absolute;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#barra-generes {
+    position: absolute;
+    z-index: 200;
+    width: 11.1vw;
+    height: 39.5vw;
+    border: 0vw solid red;
+    margin-left: 67.65vw;
+    margin-top: 7.5vh;
+    border-radius: 1vw;
+    overflow-y: scroll;
+}
+.genere1, .genere2, .genere3, .genere4, .genere5, .genere6, .genere7, .genere8, .genere9, .genere10, .genere11, .genere12, .genere13, .genere14, .genere15, .genere16 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 10vh;
+    margin-top: 0.3vh;
+}
+.genere1:hover, .genere2:hover, .genere3:hover, .genere4:hover, .genere5:hover, .genere6:hover, .genere7:hover, .genere8:hover, .genere9:hover, .genere10:hover, .genere11:hover, .genere12:hover, .genere13:hover, .genere14:hover, .genere15:hover, .genere16:hover {
+    cursor: pointer;
+    box-shadow: 0 5px #000000;
+    transform: translateY(-4px);
+}
+.genere1:active, .genere2:active, .genere3:active, .genere4:active, .genere5:active, .genere6:active, .genere7:active, .genere8:active, .genere9:active, .genere10:active, .genere11:active, .genere12:active, .genere13:active, .genere14:active, .genere15:active, .genere16:active {
+    cursor: pointer;
+    box-shadow: 0 5px #000000;
+    transform: translateY(0px);
+}
+.genere1 {
+    background-image: url(./imatges/lluita.jpg);
+}
+.genere2 {
+    background-image: url(./imatges/fps.jpg);
+}
+.genere3 {
+    background-image: url(./imatges/arcade.jpg);
+}
+.genere4 {
+    background-image: url(./imatges/beatem_up.jpg);
+}
+.genere5 {
+    background-image: url(./imatges/esports.jpg);
+}
+.genere6 {
+    background-image: url(./imatges/estrategia.jpg);
+}
+.genere7 {
+    background-image: url(./imatges/aventura_grafica.jpg);
+}
+.genere8 {
+    background-image: url(./imatges/mmorpg.jpg);
+}
+.genere9 {
+    background-image: url(./imatges/moba.jpg);
+}
+.genere10 {
+    background-image: url(./imatges/sandbox.jpg);
+}
+.genere11 {
+    background-image: url(./imatges/shooter.jpg);
+}
+.genere12 {
+    background-image: url(./imatges/musical.jpg);
+}
+.genere13 {
+    background-image: url(./imatges/rol.jpg);
+}
+.genere14 {
+    background-image: url(./imatges/third_person.jpg);
+}
+.genere15 {
+    background-image: url(./imatges/shootem_up.jpg);
+}
+.genere16 {
+    background-image: url(./imatges/simulacio.jpg);
+}
+#barra-generes::-webkit-scrollbar {
+    display: none;
+}
+.div-carta {
+    visibility: hidden;
+    position: absolute;
+    width: auto;
+    height: auto;
+
+    background-color: transparent;
+    
+    z-index: 200;
+    margin-left: 33vw;
+    margin-top: 8vh;
+}
+.carta {
+    width: 17vw;
+}
+.div-carta-descripcio {
+    visibility: hidden;
+    position: absolute;
+    width: 40vw;
+    height: auto;
+
+    background-color: transparent;
+    
+    z-index: 200;
+    margin-left: 21vw;
+    margin-top: 61vh;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 8px;
+    color: rgb(41, 35, 30);
+    font-size: 110%;
+}
+
+
+
+
+
+

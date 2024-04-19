@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./dissenyador.css">
+    <title>El Dissenyador</title>
+</head>
+<body>
+    <div class="fondo">
+        <img draggable="false" src="./imatges/sobres-2.jpg" alt="">
+        <img draggable="false" id="fons-brillo" src="./imatges/sobres3.png" alt="">
+    </div>
+
+    <div class="div-sobres">
+        <div class="sobre">
+            <img draggable="false" src="" alt="">
+            <img draggable="false" id="sobre1" src="./imatges/forged-in-the-barrens-pack-opener.png" onclick="onclickSobre1()" alt="">
+        </div>
+
+        <div class="sobre">
+            <img draggable="false" src="" alt="">
+            <img draggable="false" id="sobre2" src="./imatges/darkmoon-faire-pack.png" onclick="onclickSobre2()" alt="">
+        </div>
+
+        <div class="sobre">
+            <img draggable="false" src="" alt="">
+            <img draggable="false" id="sobre3" src="./imatges/uldum-pack.png" onclick="onclickSobre3()" alt="">
+        </div>
+    </div>
+
+    <div class="div-sobres-in">
+        <img draggable="false" id="sobre-in-1" src="./imatges/forged-in-the-barrens-pack-opener.png" onmouseover="mouseoverSobre1()" onmouseout="mouseoutSobre1()" onclick="window.location.href='./formalitzar-conceptes.html'" alt="">
+        <img draggable="false" id="sobre-in-2" src="./imatges/darkmoon-faire-pack.png" onmouseover="mouseoverSobre2()" onmouseout="mouseoutSobre2()" onclick="window.location.href='./cerca-idees.html'" alt="">
+        <img draggable="false" id="sobre-in-3" src="./imatges/uldum-pack.png" onmouseover="mouseoverSobre3()" onmouseout="mouseoutSobre3()" onclick="window.location.href='./concepte-diversio.html'" alt="">
+        <img draggable="false" id="brillo-blau" src="./imatges/brillo-blau4.png" alt="">
+    </div>
+    <div class="div-etiquetes">
+        <img id="etiqueta1" src="./imatges/form_con_joc.png" alt="">
+        <img id="etiqueta2" src="./imatges/cerca_idees2.png" alt="">
+        <img id="etiqueta3" src="./imatges/concepte_diversio2.png" alt="">
+    </div>
+
+    <script src="./javascript/funcions.js"></script>
+
+</body>
+</html>

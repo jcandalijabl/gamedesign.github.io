@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./3cs.css">
+    <title>La Càmera</title>
+</head>
+<body>
+    
+    <div class="fondo">
+        <img draggable="false" src="./imatges/eso2-la-camera.png" alt="">
+        <img draggable="false" id="fons-brillo-next" src="./imatges/eso-next-glow.png" alt="">
+    </div>
+    
+    <!-- Botons a/n -->
+
+    <div id="prova111" class="botons-n-a">
+        <div class="cont1">
+            <button id="cam-b-after1" class="after" onclick=""></button>
+        </div>
+        <div class="cont2"> 
+            <button id="cam-b-next1" class="next" onclick="onclickApartat2()" onmouseover="onmouseover3cNext()" onmouseout="onmouseout3cNext()"></button>
+        </div>
+    </div>
+    <div id="prova222" class="botons-n-a">
+        <div class="cont1">
+            <button id="cam-b-after2" class="after" onclick="onclickApartat1()"></button>
+        </div>
+        <div class="cont2"> 
+            <button id="cam-b-next2" class="next" onclick="onclickApartat3()"  onmouseover="onmouseover3cNext()" onmouseout="onmouseout3cNext()"></button>
+        </div>
+    </div>
+    <div id="prova333" class="botons-n-a">
+        <div class="cont1">
+            <button id="cam-b-after3" class="after" onclick="onclickApartat2()"></button>
+        </div>
+        <div class="cont2"> 
+            <button id="cam-b-next3" class="next" onclick="onclickApartat4()"  onmouseover="onmouseover3cNext()" onmouseout="onmouseout3cNext()"></button>
+        </div>
+    </div>
+    <div id="prova444" class="botons-n-a">
+        <div class="cont1">
+            <button id="cam-b-after4" class="after" onclick="onclickApartat3()"></button>
+        </div>
+        <div class="cont2"> 
+            <button id="cam-b-next4" class="next" onclick="onclickApartat5()"  onmouseover="onmouseover3cNext()" onmouseout="onmouseout3cNext()"></button>
+        </div>
+    </div>
+    <div id="prova555" class="botons-n-a">
+        <div class="cont1">
+            <button id="cam-b-after5" class="after" onclick="onclickApartat4()"></button>
+        </div>
+        <div class="cont2"> 
+            <button id="cam-b-next5" class="next"></button>
+        </div>
+    </div>
+
+    <!-- Contingut -->
+
+    <div id="prova11" class="form-conceptes">
+        <h1 id="cam-h1-1">Static Camera</h1>
+        <p id="cam-p-1">Fixa en una posició, sense cap tipus de moviment ni orientació extra. Permet millors esforços en la part d'escenari visible i jugable</p>
+        <hr id="cam-hr-1">
+        <img draggable="false" id="fixed-cam-img-1" src="./imatges/fixed-cam-1.jpg" alt="">
+        <img draggable="false" id="fixed-cam-img-2" src="./imatges/fixed-cam-2.webp" alt="">
+    </div>
+    <div id="prova22" class="form-conceptes">
+        <h1 id="cam-h1-2">Scroll Camera</h1>
+        <p id="cam-p-2">Definida per 2 marges: marc de visió actual i el segon (que conté al primer) és el del límit o marge. Usant els controls, podrà mirar dins el marge usant el marc de visió</p>
+        <hr id="cam-hr-2">
+        <img draggable="false" id="scroll-cam-img-1" src="./imatges/scroll-cam-1.jpg" alt="">
+        <img draggable="false" id="scroll-cam-img-2" src="./imatges/scroll-cam-2.jpg" alt="">
+    </div>
+    <div id="prova33" class="form-conceptes">
+        <h1 id="cam-h1-3">Parallax Camera</h1>
+        <p id="cam-p-3">La càmera es mou i el món es mou amb ella. Hi ha 2 tipus de Parallax: forçat o seguiment. El forçat és el joc el que mou la càmera, forçant el ritme de gameplay. El de seguiment és la càmera la que segueix al player.</p>
+        <hr id="cam-hr-3">
+        <img draggable="false" id="parallax-cam-img-1" src="./imatges/fixed-cam-1.jpg" alt="">
+        <img draggable="false" id="parallax-cam-img-2" src="./imatges/fixed-cam-2.webp" alt="">
+    </div>
+    <!--  -->
+    <div id="prova44" class="form-conceptes">
+        <h1 id="cam-h1-4">First Person Camera</h1>
+        <p id="cam-p-4">Un tipus de càmera molt popular, usualment vinculada a shooters. El jugador veu des del punt de vista dels ulls del personatge.</p>
+        <hr id="cam-hr-4">
+        <img draggable="false" id="first-cam-img-1" src="./imatges/fp_csgo.png" alt="">
+        <img draggable="false" id="first-cam-img-2" src="./imatges/fp-doom.jpg" alt="">
+    </div>  
+    <div id="prova55" class="form-conceptes">
+        <h1 id="cam-h1-5">Third Person Camera</h1>
+        <p id="cam-p-5">Mostra al player al joc mitjançant el seu avatar i enemics i perills planen al voltant de la posició actual. Mirarà sempre l'esquena del personatge? Sempre a la seva cara o de perfil? autoajustable després d'un temps? Com es comportarà la càmera amb les cantonades, vores i geometria? En quina posició i distància es col·locarà del personatge jugable?</p>
+        <hr id="cam-hr-5">
+        <img draggable="false" id="third-cam-img-1" src="./imatges/tp-rdr.jpg" alt="">
+        <img draggable="false" id="third-cam-img-2" src="./imatges/tp-wow.jpg" alt="">
+    </div>
+
+    <script src="./javascript/funcions.js"></script>
+</body>
+</html>

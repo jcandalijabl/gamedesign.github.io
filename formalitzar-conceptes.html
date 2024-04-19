@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./estils2.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- Fondo -->
+
+    <div class="fondo">
+        <img draggable="false" src="./imatges/fons-foralitzar-conceptes.jpg" alt="">
+    </div>
+
+    <!-- Botons anterior i següent -->
+
+    <div class="botons-n-a">
+        <div class="cont1">
+            <button class="after" onclick="onclickBefore()"></button>
+        </div>
+        <div class="cont2"> 
+            <button class="next" onclick="onclickNext()"></button>
+        </div>
+    </div>
+
+    <!-- Contingut -->
+
+    <div class="form-conceptes">
+
+        <!-- Botó exemple -->
+
+        <div class="div-boto-exemple">
+            <img draggable="false" id="boto-exemple-img" src="./imatges/boto-exemple.png" alt="">
+            <button id="boto-exemple-hitbox" onclick="onclickExemples()" onmouseover="onmouseoverExemplesHover()" onmouseout="onmouseoutExemplesHover2()"></button>
+
+            <img draggable="false" id="boto-exemple-surt-img" src="./imatges/boto-exemple-surt.png" alt="">
+            <button id="boto-exemple-surt-hitbox" onclick="onclickExemplesSurt()" onmouseover="onmouseoverExemplesHover2()" onmouseout="onmouseoutExemplesHover2()"></button>
+
+            <img draggable="false" id="boto-exemple-brillo" src="./imatges/boto-exemple-brillo.png" alt="">
+        </div>
+
+        <!-- Contingut Inicial -->
+
+        <img draggable="false" id="img-taula" class="imatges-contingut" src="./imatges/conceptes-taula.png" alt="">
+    
+        <!-- Contingut Exemple -->
+
+        <img draggable="false" id="wow-logo" src="./imatges/wow-logo.png" alt="">
+
+                <!-- Un joc consisteix en -->
+
+        <div id="div-story" class="joc-consisteix">
+            <div class="historia-titol">
+                <h1>Història</h1>
+            </div>
+            <div class="historia-text">
+                <p>World of Warcraft té una història extremadament extensa, fins i tot hi ha llibres que l'expliquen. És un món de fantasía amb una història ordenada i explícita. En aquest videojoc la història es una part molt important ja que en motls moments interactuesa mb ella.</p>
+            </div>
+            <div class="historia-imatges">
+                <img draggable="false" src="./imatges/wow-lore.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="div-ui" class="joc-consisteix">
+            
+        </div>
+
+        <div id="div-content" class="joc-consisteix">
+
+        </div>
+
+        <div id="div-visuals" class="joc-consisteix">
+
+        </div>
+
+        <div id="div-controls" class="joc-consisteix">
+
+        </div>
+
+        <div id="div-theme" class="joc-consisteix">
+
+        </div>
+
+        <div id="div-objective" class="joc-consisteix">
+
+        </div>
+
+        <div id="div-mechanics" class="joc-consisteix">
+
+        </div>
+
+        <div id="div-gameplay" class="joc-consisteix">
+
+        </div>
+
+        <div id="div-social" class="joc-consisteix">
+
+        </div>
+
+        <div id="div-monetization" class="joc-consisteix">
+
+        </div>
+
+
+    </div>
+
+
+    <script src="./javascript/funcions.js"></script>
+</body>
+</html>

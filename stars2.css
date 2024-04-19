@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scene i
+{
+    position: absolute;
+    position: fixed;
+    /*background: #00b3ff;*/
+    background: #ffd000;
+    border-radius: 50%;
+    animation: animateStars linear infinite;
+    z-index: 30000;
+}
+
+.circles
+{
+    position: relative;
+    width: 100px;
+    height: 100px;    
+    background-color: #0f0;
+    border-radius: 100%;
+    box-shadow:     0 0 0px #0f0,
+                    0 0 50px #0f0,
+                    0 0 100px #0f0,
+                    0 0 150px #0f0,
+                    0 0 200px #0f0,
+                    0 0 250px #0f0;
+    animation: animate 5s linear infinite;    
+}
+ 
+@keyframes animate
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+
+header
+{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bad Script', cursive;      
+}
+
+
+h1 span
+{
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animateLogo 3s linear infinite;
+}
+
+h1 span:nth-child(1)
+{
+    animation-delay: 0s;
+}
+
+h1 span:nth-child(2)
+{
+    animation-delay: 0.25s;
+}
+
+h1 span:nth-child(3)
+{
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(4)
+{
+    animation-delay: 0.75s;
+}
+
+h1 span:nth-child(5)
+{
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(6)
+{
+    animation-delay: 1.25s;
+}
+
+h1 span:nth-child(7)
+{
+    animation-delay: 1.50s;
+}
+
+h1 span:nth-child(8)
+{
+    animation-delay: 1.75s;
+}
+
+h1 span:nth-child(9)
+{
+    animation-delay: 2s;
+}
+
+h1 span:nth-child(10)
+{
+    animation-delay: 2.5s;
+}
+
+h1 span:nth-child(11)
+{
+    animation-delay: 2.75s;
+}
+
+h1 span:nth-child(12)
+{
+    animation-delay: 3s;
+}
+
+
+@keyframes animateLogo
+{
+    0%, 100%
+    {
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #ffd000,
+                    0 0 20px #ffd000,
+                    0 0 40px #ffd000,
+                    0 0 80px #ffd000,
+                    0 0 120px #ffd000,
+                    0 0 200px #ffd000,
+                    0 0 300px #ffd000,
+                    0 0 400px #ffd000;
+    }
+    5%, 95%
+    {
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}
+
+@keyframes animateStars
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY();
+    }
+
+    10%,90%
+    {
+        opacity: 1;
+    }
+}

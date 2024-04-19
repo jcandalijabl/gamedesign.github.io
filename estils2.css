@@ -1,0 +1,225 @@
+@font-face {
+    font-family: Belwe;
+    src: url(./fonts/Belwe\ Bold.otf);
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.fondo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+.fondo img{
+    height: 100%;
+    position: absolute;
+}
+#fons-brillo {
+    opacity: 0%;
+    transition: all 5s;
+}
+
+/* Botons AFter & Next */
+
+.botons-n-a {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    bottom: 1%;
+    display: flex;
+    justify-content: center;
+}
+.cont1, .cont2 {
+    width: 50%;
+    opacity: 0%;
+}
+.after, .next {
+    height: 100%;
+    width: 10%;
+    border-radius: 30%;
+}
+.after {
+    margin-left: 45%;
+}
+.next {
+    margin-left: 50%;
+}
+.after:hover, .next:hover {
+    cursor: pointer;
+}
+
+/* ---------------------------------- */
+
+.form-conceptes {
+    background-color: transparent;
+    width: 53.5%;
+    height: 80%;
+    position: absolute;
+
+    margin-left: 22.5%;
+    margin-top: 4%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imatges-contingut {
+    border: 3px solid black;
+    box-shadow: 10px 10px 10px black;
+
+    visibility: hidden;
+}
+
+            /* Botó exemple */
+
+.div-boto-exemple {
+    position: absolute;
+
+    width: 100%;
+    height: 11%;
+
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 2%;
+
+    z-index: 1000;
+}
+.div-boto-exemple img {
+    width: 15%;
+
+    position: absolute;
+
+    border: none;
+    box-shadow: none;
+}
+.div-boto-exemple button {
+    width: 13.5%;
+    height: 90%;
+
+    position: absolute;
+
+    opacity: 0%;
+    border: none;
+    border-radius: 40%;
+}
+.div-boto-exemple button:hover {
+    cursor: pointer;
+}
+
+#boto-exemple-hitbox {
+    z-index: 1001;
+}
+#boto-exemple-surt-img {
+    z-index: 1002;
+    visibility: hidden;
+}
+#boto-exemple-surt-hitbox {
+    z-index: 1003;
+    visibility: hidden;
+}
+#boto-exemple-brillo {
+    z-index: 1000;
+    visibility: hidden;
+}
+
+/* Brillo botó exemple */
+
+
+            /* ------------- */
+
+            /* Contingut Inicial */
+
+.imatges-contingut {
+    width: 500px;
+    visibility: visible;
+}
+
+            /* Contingut Exemple Logo Joc */
+
+#wow-logo {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    width: 10%;
+
+    visibility: hidden;
+}
+
+            /* Contingut Exemple Apartats */
+
+.joc-consisteix {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 100;
+
+    font-family: Belwe;
+
+    visibility: hidden;
+}
+.joc-consisteix h1, p {
+    color: whitesmoke;
+}
+
+                    /* id="div-story" */
+
+.historia-titol {
+    position: absolute;
+
+    width: 58%;
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+.historia-titol h1 {
+    font-size: 40px;
+}
+
+.historia-text {
+    position: absolute;
+    margin-top: 20%;
+
+    width: 58%;
+    height: 40%;
+
+    font-size: 20px;
+}
+.historia-text p {
+    margin-left: 5%;
+    margin-right: 5%;
+
+    text-align: justify;
+}
+.historia-imatges {
+    position: absolute;
+    width: 42%;
+    height: 100%;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    right: 0;
+    top: 0;
+}
+.historia-imatges img {
+    width: 90%;
+    margin-right: 2%;
+    border: 1px solid black;
+}
+
+

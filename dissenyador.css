@@ -1,0 +1,122 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.fondo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+.fondo img{
+    height: 100%;
+    position: absolute;
+}
+#fons-brillo {
+    opacity: 0%;
+    transition: all 5s;
+}
+
+/* ---------------------------------- */
+/* Div que englova els sobres */
+
+.div-sobres {
+    position: absolute;
+    z-index: 200;
+    width: 12%;
+    height: 86%;
+    /* border: 1px solid red; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    margin-left: 19%;
+    margin-top: 3%;
+
+}
+.div-sobres::-webkit-scrollbar {
+    display: none;
+}
+
+/* ---------------------------------- */
+/* Divs dels sobres */
+
+.sobre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: visible;
+}
+.sobre img{
+    width: 100%;
+    margin-top: 12%;
+    transition: all 0.2s;
+}
+#sobre3 {
+    margin-bottom: 12%;
+}
+#sobre1:hover, #sobre2:hover, #sobre3:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotate(5deg);
+}
+
+#sobre1, #sobre2, #sobre3 {
+    width: 100%;
+}
+/* ---------------------------------- */
+/* Divs dels sobres sel·leccionats (Interior) */
+
+.div-sobres-in {
+    position: absolute;
+    z-index: 200;
+
+    width: 10%;
+    height: 30%;
+
+    margin-top: 15.7%;
+    margin-left: 51.4%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-sobres-in img {
+    position: absolute;
+    scale: 0.65;
+}
+#sobre-in-1, #sobre-in-2, #sobre-in-3 {
+    z-index: 201;
+    width: 200%;
+    visibility: hidden;
+}
+#brillo-blau {
+    width: 500%;
+    visibility: hidden;
+    z-index: 200;
+    scale: 0.1;
+}
+.div-etiquetes {
+    position: absolute;
+    z-index: 200;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10%;
+    margin-left: 66%;
+}
+#etiqueta1, #etiqueta2, #etiqueta3 {
+    position: absolute;
+    visibility: hidden;
+    opacity: 100%;
+    scale: 0.6;
+    width: 300px;
+}

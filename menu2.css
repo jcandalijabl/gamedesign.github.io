@@ -1,0 +1,130 @@
+
+/* Part del fons de la pàgin web (La imatge que fa de menu) */
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.contenidor-fons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.contenidor-fons img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Brillo botons */
+
+.botons-brillo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 199;
+}
+.botons-brillo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 199;
+    visibility: hidden;
+}
+
+/* Contenidor dels botons */
+
+.div-buttons {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    z-index: 200;
+}
+.div-buttons button:hover {
+    cursor: url(./cursor/cursor-hover.png), auto;
+}
+
+/* Botons */
+
+.main1, .main2, .main3 {
+    background-color: transparent;
+    width: 14%;
+    height: 5%;
+
+    border: none;
+
+    border-radius: 30%;
+    opacity: 50%;
+}
+.main1, .main3 {
+    margin-top: 1.2%;
+}
+.main1 {
+    width: 18%;
+    height: 6%;
+}
+.main1:hover, .main2:hover, .main3:hover {
+    cursor: pointer;
+}
+
+/* En quina part estic (div/img "enQuinaPart" */
+.cont-menu-menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 7%;
+    height: 100%;
+}
+.menu-vertical {
+    position: absolute;
+    z-index: 2999;
+    height: 100%;
+    width: 100%;
+}
+.enQuinaPart, .cont-menu-menu a {
+    float: left;
+    clear: left;
+    z-index: 3000;
+    width: 100%;
+}
+.enQuinaPart:hover {
+    cursor: url(./cursor/cursor-hover.png), auto;
+}
+
+.shine:hover {
+    animation-name: shine;
+    animation-duration: 5s;
+    transform-origin:50% 50%;
+    animation-iteration-count: infinite;
+    display: inline-block;
+}
+
+@keyframes shine {
+    0% { -webkit-transform: scale(1) rotate(0deg); } 
+    10% { -webkit-transform: scale(1.1) rotate(-1deg); }
+    20% { -webkit-transform: scale(1) rotate(1deg); }
+    30% { -webkit-transform: scale(1.1) rotate(0deg); }
+    40% { -webkit-transform: scale(1) rotate(1deg); }
+    50% { -webkit-transform: scale(1.1) rotate(-1deg); }
+    60% { -webkit-transform: scale(1) rotate(0deg); }
+    70% { -webkit-transform: scale(1.1) rotate(-1deg); }
+    80% { -webkit-transform: scale(1) rotate(1deg); }
+    90% { -webkit-transform: scale(1.1) rotate(0deg); }
+    100% { -webkit-transform: scale(1) rotate(-1deg); }
+}
+
+/* Cursor */
+
+* {
+    cursor: url(./cursor/hs-cursor.png), auto;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./levelup.css">
+</head>
+<body>
+    <div class="fondo">
+        <img src="./imatges/levelup/prova-fondo-levels.png" alt="">
+        <!-- <img draggable="false" src="./imatges/levelup/levelup-fondo-plus-plus.png" alt=""> -->
+        <img draggable="false" id="levelup-fondo-paper" src="./imatges/levelup/levelup-fondo-paper.png" alt="">
+    </div>
+
+    <div class="fondo-extras">
+        <!-- Botons anterior i següent -->
+        <img id="moure-menu-hover1" src="./imatges/levelup/botons seguent i anterior/boto-anterior.png" alt="">
+        <img id="moure-menu-hover2" src="./imatges/levelup/botons seguent i anterior/boto-seguent.png" alt="">
+
+        <!-- Menus dels nivells -->
+        <img class="menus-nivells" id="levelup-menu1" src="./imatges/levelup/levels 1-6/levels1-6.png" alt="">
+        <img class="menus-nivells" id="levelup-menu2" src="./imatges/levelup/levels 7-12/levels7-12.png" alt="">
+        <img class="menus-nivells" id="levelup-menu3" src="./imatges/levelup/levels 13-17/levels13-17.png" alt="">
+    </div>
+
+    <div class="div-levels-actuals">
+        <img id="actual-level14" src="./imatges/levelup/levels-actuals/level14.png" alt="">
+    </div>
+
+    <div class="div-botons-activadors">
+
+        <!-- Botons pel Menu de Levels1-6 -->
+        <div id="botons-cont">
+            <button class="levelactiu" id="levelup-level1" onclick="onClickLevel1()" onmouseover="onmouseOverGlowLevel1()" onmouseout="onmouseOutGlowLevel1()"></button>
+            <button class="levelactiu" id="levelup-level2" onclick="onClickLevel2()" onmouseover="onmouseOverGlowLevel2()" onmouseout="onmouseOutGlowLevel2()"></button>
+            <button class="levelactiu" id="levelup-level3" onclick="onClickLevel3()" onmouseover="onmouseOverGlowLevel3()" onmouseout="onmouseOutGlowLevel3()"></button>
+            <button class="levelactiu" id="levelup-level4" onclick="onClickLevel4()" onmouseover="onmouseOverGlowLevel4()" onmouseout="onmouseOutGlowLevel4()"></button>
+            <button class="levelactiu" id="levelup-level5" onclick="onClickLevel5()" onmouseover="onmouseOverGlowLevel5()" onmouseout="onmouseOutGlowLevel5()"></button>
+            <button class="levelactiu" id="levelup-level6" onclick="onClickLevel6()" onmouseover="onmouseOverGlowLevel6()" onmouseout="onmouseOutGlowLevel6()"></button>
+        </div>
+        <!-- Botons pel Menu de Levels7-12 -->
+        <div id="botons-cont2">
+            <button id="levelup-level7" onclick="onClickLevel7()" onmouseover="onmouseOverGlowLevel7()" onmouseout="onmouseOutGlowLevel7()"></button>
+            <button id="levelup-level8" onclick="onClickLevel8()" onmouseover="onmouseOverGlowLevel8()" onmouseout="onmouseOutGlowLevel8()"></button>
+            <button id="levelup-level9" onclick="onClickLevel9()" onmouseover="onmouseOverGlowLevel9()" onmouseout="onmouseOutGlowLevel9()"></button>
+            <button id="levelup-level10" onclick="onClickLevel10()" onmouseover="onmouseOverGlowLevel10()" onmouseout="onmouseOutGlowLevel10()"></button>
+            <button id="levelup-level11" onclick="onClickLevel11()" onmouseover="onmouseOverGlowLevel11()" onmouseout="onmouseOutGlowLevel11()"></button>
+            <button id="levelup-level12" onclick="onClickLevel12()" onmouseover="onmouseOverGlowLevel12()" onmouseout="onmouseOutGlowLevel12()"></button>
+        </div>
+        <!-- Botons pel Menu de Levels13-17 -->
+        <div id="botons-cont3">
+            <button id="levelup-level13" onclick="onClickLevel13()" onmouseover="onmouseOverGlowLevel13()" onmouseout="onmouseOutGlowLevel13()"></button>
+            <button id="levelup-level14" onclick="onClickLevel14()" onmouseover="onmouseOverGlowLevel14()" onmouseout="onmouseOutGlowLevel14()">Boto 14</button>
+            <button id="levelup-level15" onclick="onClickLevel15()" onmouseover="onmouseOverGlowLevel15()" onmouseout="onmouseOutGlowLevel15()"></button>
+            <button id="levelup-level16" onclick="onClickLevel16()" onmouseover="onmouseOverGlowLevel16()" onmouseout="onmouseOutGlowLevel16()"></button>
+            <button id="levelup-level17" onclick="onClickLevel17()" onmouseover="onmouseOverGlowLevel17()" onmouseout="onmouseOutGlowLevel17()"></button>
+        </div>
+        <!-- Botons Seguent i Anterior -->
+        <div class="botons-cont4">
+            <button id="levelup-anterior1"></button>
+            <button id="levelup-seguent1" onclick="onclickLevelUpSeguent()"></button>
+        </div>
+        <div class="botons-cont4">
+            <button id="levelup-anterior2" onclick="onclickLevelUpAnteriorAnterior()" onmouseover="onmouseOverLvlAnterior()" onmouseout="onmouseOutLvlAnterior()"></button>
+            <button id="levelup-seguent2" onclick="onclickLevelUpSeguentSeguent()"></button>
+        </div>
+        <div class="botons-cont4">
+            <button id="levelup-anterior3" onclick="onclickLevelUpAnterior()"></button>
+            <button id="levelup-seguent3"></button>
+        </div>
+    </div>
+
+    <div class="fondo-extras">
+        <!-- 1-6 -->
+        <img class="level-glow" id="glow-level1" src="./imatges/levelup/hovers/1-6/1.png" alt="">
+        <img class="level-glow" id="glow-level2" src="./imatges/levelup/hovers/1-6/2.png" alt="">
+        <img class="level-glow" id="glow-level3" src="./imatges/levelup/hovers/1-6/3.png" alt="">
+        <img class="level-glow" id="glow-level4" src="./imatges/levelup/hovers/1-6/4.png" alt="">
+        <img class="level-glow" id="glow-level5" src="./imatges/levelup/hovers/1-6/5.png" alt="">
+        <img class="level-glow" id="glow-level6" src="./imatges/levelup/hovers/1-6/6.png" alt="">
+
+        <!-- 7-12 -->
+        <img class="level-glow" id="glow-level7" src="./imatges/levelup/hovers/7-12/7.png" alt="">
+        <img class="level-glow" id="glow-level8" src="./imatges/levelup/hovers/7-12/8.png" alt="">
+        <img class="level-glow" id="glow-level9" src="./imatges/levelup/hovers/7-12/9.png" alt="">
+        <img class="level-glow" id="glow-level10" src="./imatges/levelup/hovers/7-12/10.png" alt="">
+        <img class="level-glow" id="glow-level11" src="./imatges/levelup/hovers/7-12/11.png" alt="">
+        <img class="level-glow" id="glow-level12" src="./imatges/levelup/hovers/7-12/12.png" alt="">
+
+        <!-- 13-17 -->
+        <img class="level-glow" id="glow-level13" src="./imatges/levelup/hovers/13-17/13.png" alt="">
+        <img class="level-glow" id="glow-level14" src="./imatges/levelup/hovers/13-17/14.png" alt="">
+        <img class="level-glow" id="glow-level15" src="./imatges/levelup/hovers/13-17/15.png" alt="">
+        <img class="level-glow" id="glow-level16" src="./imatges/levelup/hovers/13-17/16.png" alt="">
+        <img class="level-glow" id="glow-level17" src="./imatges/levelup/hovers/13-17/17.png" alt="">
+
+
+    </div>
+
+    <div class="content-scroll">
+        <div class="content-in">
+            <div class="div-levels" id="div-lvl-default">
+                <h1>No s'ha trobat contingut</h1>
+                <h2>Escull un nivell...</h2>
+            </div>
+            <div class="div-levels" id="div-lvl1">
+                <div class="titol" id="titol-lvl1">
+                    <h1>BENVINGUTS, NOOBS</h1>
+                </div>
+                <div class="cos" id="cos-lvl1">
+                    <blockquote class="primer-element">
+                        <p>
+                            Quan parlem d'un joc, ens referic a una activitat a la qual l'hi hem afegit normes per obtenir una derrota o una victoria. Un videojoc bé a ser el mateix però en l'entorn virtual.
+                        </p>
+                        <p>
+                            Així doncs... Què és un joc?
+                        </p>
+                        <p>
+                            Un Joc és una activitat que...
+                        </p>
+                        <ul>
+                            <li>Té unes condicions de victoria</li>
+                            <li>Té unes normes</li>
+                            <li>Requereix d'un jugador (Com a mínim)</li>
+                        </ul>
+                    </blockquote>
+                    <h2>Client server LAN (o WAN)</h2>
+                    <blockquote class="ultim-element">
+                        <p>
+                            Dos o més jugadors cooperen o competeixen entre ells en temps real en màquines connectades a una LAN o a una WAN, la diferència és la proximitat, mentre que WAN es a gran escala, LAN és local i per tant s'ha d'estar en la mateixa casa o habitació. (Portes l'ordinador a casa d'un amic per jugar en una LAN)
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="div-levels" id="div-lvl2">
+
+            </div>
+            <div class="div-levels" id="div-lvl3">
+
+            </div>
+            <div class="div-levels" id="div-lvl4">
+
+            </div>
+            <div class="div-levels" id="div-lvl5">
+
+            </div>
+            <div class="div-levels" id="div-lvl6">
+
+            </div>
+            <div class="div-levels" id="div-lvl7">
+
+            </div>
+            <div class="div-levels" id="div-lvl8">
+
+            </div>
+            <div class="div-levels" id="div-lvl9">
+
+            </div>
+            <div class="div-levels" id="div-lvl10">
+
+            </div>
+            <div class="div-levels" id="div-lvl11">
+
+            </div>
+            <div class="div-levels" id="div-lvl12">
+
+            </div>
+            <div class="div-levels" id="div-lvl13">
+
+            </div>
+            <div class="div-levels" id="div-lvl14">
+                <div class="titol" id="titol-lvl14">
+                    <h1>MULTIPLAYER - COM MÉS MILLOR</h1>
+                </div>
+                <div class="cos" id="cos-lvl14">
+                    <h2>Head-to-Head</h2>
+                    <blockquote>
+                        <p>
+                            Dos jugadors o equips diferents competeixen entre ells en temps real en les mateixes condicions. Uns exemples d'aquest estil de joc son els FPS com el CS:GO o algun joc d'esports com ara el Fifa.
+                        </p>
+                    </blockquote>
+                    <h2>Peer-to-Peer</h2>
+                    <blockquote>
+                        <p>
+                            Dos o més jugadors cooperen o competeixen entre ells en temps real en màquines connectades a una LAN o a una WAN, la diferència és la proximitat, mentre que WAN esa gran escala, LAN és local i per tant s'ha d'estar en la mateixa casa o habitació. (Portes l'ordinador a casa d'un amic per jugar en una LAN)
+                        </p>
+                    </blockquote>
+                    <h2>Client server LAN</h2>
+                    <blockquote class="ultim-element">
+                        <p>
+                            Dos o més jugadors cooperen o competeixen entre ells en temps real en màquines connectades a una LAN o a una WAN, la diferència és la proximitat, mentre que WAN esa gran escala, LAN és local i per tant s'ha d'estar en la mateixa casa o habitació. (Portes l'ordinador a casa d'un amic per jugar en una LAN)
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="div-levels" id="div-lvl15">
+
+            </div>
+            <div class="div-levels" id="div-lvl16">
+
+            </div>
+            <div class="div-levels" id="div-lvl17">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./javascript/funcions.js"></script>
+</body>
+</html>

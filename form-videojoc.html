@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./stars2.css">
+    <link rel="stylesheet" href="./form-videojoc.css">
+    
+    <title>Formalitzant El Videojoc</title>
+</head>
+<body>
+    
+        <div class="fondo">
+            <img draggable="false" src="./imatges/fondo-whiet-mantle.png" alt="">
+        </div>
+
+    <div id="slide-div">
+        <div class="div-content">
+            <img draggable="false" id="form-caixa" src="./imatges/bundle-sobres2.png" alt="">
+            <img draggable="false" id="form-caixa-extra" src="./imatges/bundle-sobres-extra.png" alt="">
+            <div id="fons-negre" class="div-content-fondo"></div>
+
+            <!-- Text -->
+
+            <img draggable="false" id="form-text1" class="form-text-global" src="./imatges/text-form-videojoc/text1.png" alt="">
+            <img draggable="false" id="form-text1-glow" class="form-text-global" src="./imatges/text-form-videojoc/text1-glow.png" alt="">
+        </div>
+        <div class="div-sobres">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre1" src="./imatges/forged-in-the-barrens-pack-opener.png" onclick="onclickYearPackGlow1()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre2" src="./imatges/forged-in-the-barrens-pack-opener.png" onclick="onclickYearPackGlow2()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre3" src="./imatges/forged-in-the-barrens-pack-opener.png" onclick="onclickYearPackGlow3()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre4" src="./imatges/forged-in-the-barrens-pack-opener.png" onclick="onclickYearPackGlow4()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre5" src="./imatges/forged-in-the-barrens-pack-opener.png" onclick="onclickYearPackGlow5()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre6" src="./imatges/forged-in-the-barrens-pack-opener.png" onclick="onclickYearPackGlow6()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre7" src="./imatges/forged-in-the-barrens-pack-opener.png" onclick="onclickYearPackGlow7()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre8" src="./imatges/forged-in-the-barrens-pack-opener.png" onclick="onclickYearPackGlow8()" alt="">
+
+            <img draggable="false" class="sobres-global" id="form-sobre1-glow-davant" src="./imatges/horde-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre2-glow-davant" src="./imatges/horde-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre3-glow-davant" src="./imatges/horde-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre4-glow-davant" src="./imatges/horde-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre5-glow-davant" src="./imatges/horde-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre6-glow-davant" src="./imatges/horde-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre7-glow-davant" src="./imatges/horde-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre8-glow-davant" src="./imatges/horde-glow-davant2.png" alt="">
+
+            <img draggable="false" class="sobres-global" id="form-sobre1-glow-darrere" src="./imatges/horde-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre2-glow-darrere" src="./imatges/horde-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre3-glow-darrere" src="./imatges/horde-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre4-glow-darrere" src="./imatges/horde-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre5-glow-darrere" src="./imatges/horde-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre6-glow-darrere" src="./imatges/horde-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre7-glow-darrere" src="./imatges/horde-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre8-glow-darrere" src="./imatges/horde-glow-darrere.png" alt="">
+        </div>
+        <div class="div-cartes">
+            <img draggable="false" id="form-card-img-1" class="shake" onmouseover="overFormTextGlow1()" onmouseout="outFormTextGlow1()" src="./imatges/cartes/card-back-pirates.png" alt="">
+            <img draggable="false" id="form-card-img-2" class="shake" src="./imatges/cartes/card-back-azeroth-is-burning-450x685.png" alt="">
+            <img draggable="false" id="form-card-img-3" class="shake" src="./imatges/cartes/card-back-secret-level.png" alt="">
+            <img draggable="false" id="form-card-img-4" class="shake" src="./imatges/cartes/card-back-magni.png" alt="">
+            <img draggable="false" id="form-card-img-5" class="shake" src="./imatges/cartes/card-back-hct-championships.png" alt="">
+            <img draggable="false" id="form-card-img-6" class="shake" src="./imatges/cartes/card-back-blood-knight.png" alt="">
+            <img draggable="false" id="form-card-img-7" class="shake" src="./imatges/cartes/card-back-lunarnewyear.png" alt="">
+            <img draggable="false" id="form-card-img-8" class="shake" src="./imatges/cartes/card-back-ragnaros.png" alt="">
+        </div>
+
+        <div class="numMenu">
+            <img draggable="false" src="./imatges/h-flag.png" alt="">
+            <h1>Menu 2</h1>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- Seguent apartat -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+    
+    <div id="slide-div2">
+        <div class="div-content">
+            <img draggable="false" id="form-caixa2" src="./imatges/bundle-sobres2.png" alt="">
+            <img draggable="false" id="form-caixa-extra2" src="./imatges/bundle-sobres-extra.png" alt="">
+            <div id="fons-negre" class="div-content-fondo"></div>
+
+            <!-- Text -->
+
+            <img draggable="false" id="form-text1-2" class="form-text-global" src="./imatges/text-form-videojoc/text1.png" alt="">
+            <img draggable="false" id="form-text1-glow-2" class="form-text-global" src="./imatges/text-form-videojoc/text1-glow.png" alt="">
+        </div>
+        <div class="div-sobres">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre1-2" src="./imatges/alliance-pack.png" onclick="onclickYearPackGlow1_2()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre2-2" src="./imatges/alliance-pack.png" onclick="onclickYearPackGlow2_2()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre3-2" src="./imatges/alliance-pack.png" onclick="onclickYearPackGlow3_2()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre4-2" src="./imatges/alliance-pack.png" onclick="onclickYearPackGlow4_2()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre5-2" src="./imatges/alliance-pack.png" onclick="onclickYearPackGlow5_2()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre6-2" src="./imatges/alliance-pack.png" onclick="onclickYearPackGlow6_2()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre7-2" src="./imatges/alliance-pack.png" onclick="onclickYearPackGlow7_2()" alt="">
+            <img draggable="false" class="sobres-global shake2" id="form-sobre8-2" src="./imatges/alliance-pack.png" onclick="onclickYearPackGlow8_2()" alt="">
+
+            <img draggable="false" class="sobres-global" id="form-sobre1-glow-2-davant" src="./imatges/alliance-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre2-glow-2-davant" src="./imatges/alliance-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre3-glow-2-davant" src="./imatges/alliance-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre4-glow-2-davant" src="./imatges/alliance-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre5-glow-2-davant" src="./imatges/alliance-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre6-glow-2-davant" src="./imatges/alliance-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre7-glow-2-davant" src="./imatges/alliance-glow-davant2.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre8-glow-2-davant" src="./imatges/alliance-glow-davant2.png" alt="">
+
+            <img draggable="false" class="sobres-global" id="form-sobre1-glow-2-darrere" src="./imatges/alliance-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre2-glow-2-darrere" src="./imatges/alliance-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre3-glow-2-darrere" src="./imatges/alliance-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre4-glow-2-darrere" src="./imatges/alliance-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre5-glow-2-darrere" src="./imatges/alliance-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre6-glow-2-darrere" src="./imatges/alliance-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre7-glow-2-darrere" src="./imatges/alliance-glow-darrere.png" alt="">
+            <img draggable="false" class="sobres-global" id="form-sobre8-glow-2-darrere" src="./imatges/alliance-glow-darrere.png" alt="">
+        </div>
+        <div class="div-cartes">
+            <img draggable="false" id="form-card-img-1-2" class="shake" onmouseover="overFormTextGlow1()" onmouseout="outFormTextGlow1()" onclick="onclickCartaContingut()" src="./imatges/cartes/card-back-pirates.png" alt="">
+            <img draggable="false" id="form-card-img-2-2" class="shake" src="./imatges/cartes/card-back-azeroth-is-burning-450x685.png" alt="">
+            <img draggable="false" id="form-card-img-3-2" class="shake" src="./imatges/cartes/card-back-secret-level.png" alt="">
+            <img draggable="false" id="form-card-img-4-2" class="shake" src="./imatges/cartes/card-back-magni.png" alt="">
+            <img draggable="false" id="form-card-img-5-2" class="shake" src="./imatges/cartes/card-back-hct-championships.png" alt="">
+            <img draggable="false" id="form-card-img-6-2" class="shake" src="./imatges/cartes/card-back-blood-knight.png" alt="">
+            <img draggable="false" id="form-card-img-7-2" class="shake" src="./imatges/cartes/card-back-lunarnewyear.png" alt="">
+            <img draggable="false" id="form-card-img-8-2" class="shake" src="./imatges/cartes/card-back-ragnaros.png" alt="">
+        </div>
+
+<!-- [1] ==========================================================================================================-->
+        <!-- ///////////////////////////////////// -->
+        <div id="content-pack-1">
+            <div id="form-div-contingut-in" class="div-contingut-in">
+                <img draggable="false" id="part1-1" src="./imatges/freehspack.png" alt="">                
+                <div class="part-mig">
+                    <div class="part-dreta">
+                        <img draggable="false" src="./imatges/comparacio-historia.png" alt="">
+                    </div>
+                    <div class="part-esquerra">
+                        <img draggable="false" src="./imatges/comparacio-historia.png" alt="">
+                    </div>
+                </div>
+
+                <img draggable="false" id="part2-1" src="./imatges/freehspack.png" alt="">
+            </div>
+            
+            <div id="botons-amunt-avall" class="center-amunt-avall">
+                <img draggable="false" class="boto-amunt" src="./imatges/boto-amunt.png" alt="" onmouseover="overBotoAmunt()" onmouseout="outBotoAmunt()">
+                <img draggable="false" id="form-boto-torna" src="./imatges/boto-hs-torna.png" onclick="onclickFormTorna()" alt="">
+                <img draggable="false" class="boto-avall" src="./imatges/boto-avall.png" alt="" onclick="onclickContSlideCentre()">
+            </div>
+        </div>
+        <!-- ///////////////////////////////////// -->
+        <div id="content-pack-2">
+            <div id="form-div-contingut-in-2" class="div-contingut-in">
+                <img draggable="false" id="part1-2" src="./imatges/freehspack.png" alt="">
+                <div class="part-mig">
+                    <div class="part-dreta">
+                        <h1>Un Joc basat en Historia o Viceversa</h1>
+                        <img draggable="false" src="./imatges/The-Witcher-3-lore.jpeg" alt="">
+                        <p>Hi ha videojocs que es basen en una historia, en canvi també hi ha videojocs que no tenene res a veure amb una història</p>
+                    </div>
+                    <div class="part-esquerra">
+                        <h1>Un Joc basat en Historia o Viceversa</h1>
+                        <img draggable="false" src="./imatges/comparacio-historia.png" alt="">
+                        <p>Hi ha videojocs que es basen en una historia, en canvi també hi ha videojocs que no tenene res a veure amb una història</p>
+                    </div>
+                </div>
+
+                <img draggable="false" id="part2-2" src="./imatges/freehspack.png" alt="">
+            </div>
+            <div id="botons-amunt-avall-2" class="center-amunt-avall">
+                <img draggable="false" class="boto-amunt" src="./imatges/boto-amunt.png" alt="" onmouseover="overBotoAmunt()" onmouseout="outBotoAmunt()" onclick="onclickContSlideUp()">
+                <img draggable="false" id="form-boto-torna-2" src="./imatges/boto-hs-torna.png" onclick="onclickFormTorna()" alt="">
+                <img draggable="false" class="boto-avall" src="./imatges/boto-avall.png" alt="" onclick="onclickContSlideDown()">
+            </div>
+        </div>
+        <!-- ///////////////////////////////////// -->
+        <div id="content-pack-3">
+            <div id="form-div-contingut-in-3" class="div-contingut-in">
+                <img draggable="false" id="part1-3" src="./imatges/freehspack.png" alt="">
+                <div class="part-mig">
+                    <div class="part-dreta">
+                        <img draggable="false" src="./imatges/comparacio-historia.png" alt="">
+                    </div>
+                    <div class="part-esquerra">
+                        <img draggable="false" src="./imatges/comparacio-historia.png" alt="">
+                    </div>
+                </div>
+                
+                <img draggable="false" id="part2-3" src="./imatges/freehspack.png" alt="">
+            </div>
+            <div id="botons-amunt-avall-3" class="center-amunt-avall">
+                <img draggable="false" class="boto-amunt" src="./imatges/boto-amunt.png" alt="" onmouseover="overBotoAmunt()" onmouseout="outBotoAmunt()" onclick="onclickContSlideCentre()">
+                <img draggable="false" id="form-boto-torna-3" src="./imatges/boto-hs-torna.png" onclick="onclickFormTorna()" alt="">
+                <img draggable="false" class="boto-avall" src="./imatges/boto-avall.png" alt="">
+            </div>
+        </div>
+        <!-- ///////////////////////////////////// -->
+<!--===========================================================================================================-->
+<!-- [2] ==========================================================================================================-->
+<!--===========================================================================================================-->
+<!-- [3] ==========================================================================================================-->
+<!--===========================================================================================================-->
+
+
+
+
+
+        <div class="numMenu">
+            <img draggable="false" src="./imatges/a-flag.png" alt="">
+            <h1>Menu 1</h1>
+        </div>
+
+    </div>
+
+    
+    
+    <!-- --------------- -->
+    <div class="slide-next">
+        <img id="form-div-botons-next" draggable="false" class="slide-next-button" src="./imatges/next-hs.webp" onclick="SlideCenter()" alt="">
+    </div>
+    <div class="slide-after">
+        <img id="form-div-botons-before" draggable="false" class="slide-after-button" src="./imatges/prev-hs.webp" onclick="SlideUp()" alt="">
+    </div>
+    
+
+
+    <div class="scene"></div>
+
+    <script src="./javascript/stars.js"></script>
+    <script src="./javascript/funcions.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+body {
+    background-image: url(./imatges/start-bg-size-5.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}

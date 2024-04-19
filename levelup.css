@@ -1,0 +1,238 @@
+@font-face {
+    font-family: Belwe;
+    src: url(./fonts/Belwe\ Bold.otf);
+}
+@font-face {
+    font-family: HsFont;
+    src: url(./fonts/Univers\ 57\ Condensed\ Oblique.otf);
+}
+* {
+    cursor: url(./cursor/hs-cursor.png), auto;
+}
+*:active {
+    cursor: url(./cursor/hs-cursor-active.png), auto;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: black;
+    color: black;
+    font-family: Belwe;
+}
+p {
+    font-family: HsFont;
+}
+.fondo, .fondo-extras, .div-levels-actuals {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    pointer-events: none;
+}
+.fondo img, .fondo-extras img{
+    z-index: 500;
+    height: 100%;
+    position: absolute;
+}
+#levelup-fondo-paper {
+    z-index: 0;
+}
+
+/* Menus */
+
+.menus-nivells {
+    visibility: hidden;
+    z-index: 700;
+    pointer-events: none;
+}
+#levelup-menu1 {
+    visibility: visible;
+}
+
+/* Botons dels Menus (Hitbox) + Seguent i Anterior */
+
+.div-botons-activadors {
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+}
+#botons-cont, #botons-cont2, #botons-cont3, .botons-cont4 {
+    visibility: visible;
+    position: absolute;
+    width: 12vw;
+    height: 100%;
+    
+    z-index: 600;
+
+    margin-left: 67.5vw;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.botons-cont4{
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+} 
+
+#botons-cont button, #botons-cont2 button, #botons-cont3 button {
+    visibility: hidden;
+    pointer-events: all;
+
+    width: 100%;
+    height: 10.5vh;
+    z-index: 600;
+    opacity: 0%;
+}
+#botons-cont button {
+    visibility: visible;
+}
+.botons-cont4 button {
+    visibility: hidden;
+    margin-bottom: 6vh;
+    height: 11vh;
+    width: 50%;
+    opacity: 0%;
+    pointer-events: all;
+    z-index: 700;
+}
+#levelup-anterior2, #levelup-seguent2, #levelup-anterior3, #levelup-seguent3 {
+    visibility: hidden;
+}
+#levelup-anterior1, #levelup-seguent1 {
+    visibility: visible;
+}
+#levelup-level1, #levelup-level7, #levelup-level13 {
+    margin-top: 19vh;
+}
+
+/* Glow dels botons de cada Level */
+
+.level-glow {
+    visibility: hidden;
+    opacity: 100%;
+    z-index: 3000;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+/* Content contenidors */
+
+.content-scroll {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.content-in {
+    margin-left: 22%;
+    width: 40vw;
+    height: 5000px;
+    overflow: hidden;
+    pointer-events: none;
+}
+.content-in .div-levels {
+    visibility: visible;
+    position: absolute;
+    width: 40vw;
+    height: 65%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Content Content */
+
+.content-in div {
+    margin-top: 3%;
+    visibility: hidden;
+}
+
+.div-levels {
+    visibility: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: absolute;
+}
+/* ------------ */
+.div-levels::-webkit-scrollbar {
+    width: 20px;
+}
+.div-levels::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #A1662F; 
+    border-radius: 5px;
+}
+.div-levels::-webkit-scrollbar-thumb {
+    background-color: brown;
+    background-image: url("./imatges/wooden-log-scroll.webp");
+    background-size: cover;
+    border-radius: 5px;
+}
+
+/* --------------- */
+.div-levels div {
+    visibility: hidden;
+    display: block;
+}
+.titol, .cos h2 {
+    text-align: center;
+    height: auto;
+}
+.cos h2 {
+    margin-top: 50px;
+}
+.cos {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.titol h1 {
+    margin-top: 0%;
+}
+.cos p {
+    text-align: justify;
+    font-size: larger;
+}
+#div-lvl-default {
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+#div-lvl1, #div-lvl2, #div-lvl3, #div-lvl4, #div-lvl5, #div-lvl6, #div-lvl7, #div-lvl8, #div-lvl9, #div-lvl10, #div-lvl11, #div-lvl12, #div-lvl13, #div-lvl14, #div-lvl15, #div-lvl16, #div-lvl17 {
+    visibility: hidden;
+}
+
+
+.primer-element {
+    margin-top: 10%;
+}
+.ultim-element {
+    margin-bottom: 40%;
+}
+
+/* Levels Actuals (Numero 'fondo') */
+
+.div-levels-actuals img{
+    z-index: 4000;
+    height: 100%;
+    position: absolute;
+}
