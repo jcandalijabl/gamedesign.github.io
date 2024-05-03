@@ -85,21 +85,6 @@ body {
     width: 7%;
     height: 100%;
 }
-.menu-vertical {
-    position: absolute;
-    z-index: 2999;
-    height: 100%;
-    width: 100%;
-}
-.enQuinaPart, .cont-menu-menu a {
-    float: left;
-    clear: left;
-    z-index: 3000;
-    width: 100%;
-}
-.enQuinaPart:hover {
-    cursor: url(./cursor/cursor-hover.png), auto;
-}
 
 .shine:hover {
     animation-name: shine;
