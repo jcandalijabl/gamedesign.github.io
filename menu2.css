@@ -113,6 +113,9 @@ body {
 * {
     cursor: url(./cursor/hs-cursor.png), auto;
 }
+*:active {
+    cursor: url(./cursor/hs-cursor-active.png), auto;
+}
 
 /* Botons de caixa */
 
