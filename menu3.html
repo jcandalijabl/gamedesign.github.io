@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="./menu-style.css">
     <link rel="stylesheet" href="./menu2.css">
 
     <title>Game Design Menu 3</title>
@@ -12,7 +13,43 @@
     <!-- Fondo -->
 
     <div class="contenidor-fons">
-        <img draggable="false" id="#fons-main-menu" src="./imatges/fons22.jpg" alt="">
+        <img draggable="false" id="part_fons_superior" src="./imatges/menu_sobresortir/part_superior3.png" alt="a">
+        <img draggable="false" id="part_fons_inferior" src="./imatges/menu_sobresortir/part_inferior.png" alt="a">
+
+        <img draggable="false" id="caixa_animacio_part_1" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_1.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_2" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_2.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_3" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_3.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_4" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_4.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_5" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_5.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_6" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_6.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_7" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_7.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_8" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_8.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_9" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_9.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_10" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_10.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_11" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_11.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_12" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_12.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_13" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_13.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_14" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_14.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_15" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_15.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_16" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_16.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_17" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_17.png" alt="">
+        <img draggable="false" id="caixa_animacio_part_18" class="caixa_fons" src="./imatges/menu_sobresortir/caixa_animacio_18.png" alt="">
+    </div>
+    <div class="botons_de_caixa">
+        <button id="caixa_boto" onclick="CaixaAnimacio1()">ACCIO</button>
+        <button id="caixa_boto_1" onclick="CaixaMostrarMenuDeMenus()">Menu</button> <!-- Boto de menus -->
+        <button id="caixa_boto_2" onclick="window.location.href = 'https://assassinscreedmusic.github.io';">Assac</button> <!-- Boto de assacmusic -->
+        <button id="caixa_boto_3" onclick="window.location.href = 'http://elservidor.cat';">Elservidor</button> <!-- Boto de elservidor -->
+        <div id="div_div_caixa_menu_menus">
+            <div id="div_caixa_menu_menus">
+                <img src="./imatges/menu_sobresortir/menu-de-menus2.webp" alt="">
+                
+                <button id="caixa_boto_menu_1" onclick="window.location.href = './menu.html'">1</button>
+                <button id="caixa_boto_menu_2" onclick="window.location.href = './menu2.html'">2</button>
+                <button id="caixa_boto_menu_3" onclick="window.location.href = './menu3.html'">3</button>
+                <button id="caixa_boto_menu_4" onclick="window.location.href = './menu4.html'">4</button>
+            </div>
+        </div>
     </div>
 
     <!-- Brillo botons al apuntar-los -->
@@ -26,7 +63,7 @@
 
     <!-- En quina part estic -->
 
-    <div class="cont-menu-menu">
+    <!-- <div class="cont-menu-menu">
         <img draggable="false" class="menu-vertical" src="./imatges/menu-vertical.png" alt="">
         <img draggable="false" id="enQuinaPart1" class="enQuinaPart shine" onclick="window.location.href='./menu.html'" src="./imatges/hearthstone_llibre_capsa.png" alt="">
         <img draggable="false" id="enQuinaPart2" class="enQuinaPart shine" src="./imatges/Runestone_prior_24.2.webp" alt="">
@@ -34,7 +71,7 @@
             <img draggable="false" id="enQuinaPart3" class="enQuinaPart shine" src="/imatges/logo.png" alt="">
         </a>
         <img draggable="false" id="enQuinaPart4" class="enQuinaPart shine" src="/imatges/foc-gema.png" alt="">
-    </div>
+    </div> -->
 
     <!-- Botons -->
 
@@ -48,5 +85,6 @@
     <!-- Crida a fitxer JS -->
 
     <script src="./javascript/funcions.js"></script>
+    <script src="./javascript/caixa.js"></script>
 </body>
 </html>

@@ -113,3 +113,85 @@ body {
 * {
     cursor: url(./cursor/hs-cursor.png), auto;
 }
+
+/* Botons de caixa */
+
+.botons_de_caixa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.botons_de_caixa button {
+    position: absolute;
+    z-index: 9000;
+    opacity: 100%;
+}
+#caixa_boto {
+    height: 100%;
+}
+#caixa_boto_1 {
+    margin-left: 13%;
+    margin-top: 10%;
+    width: 10%;
+    height: 9vw;
+    opacity: 0%;
+    visibility: hidden;
+}
+#caixa_boto_2 {
+    margin-left: 13%;
+    margin-top: 19.5%;
+    width: 10%;
+    height: 8.5vw;
+    opacity: 0%;
+    visibility: hidden;
+}
+#caixa_boto_3 {
+    margin-left: 13%;
+    margin-top: 28.2%;
+    width: 10%;
+    height: 8vw;
+    opacity: 0%;
+    visibility: hidden;
+}
+#div_div_caixa_menu_menus {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#div_caixa_menu_menus {
+    position: absolute;
+    right: 3%;
+    width: fit-content;
+    height: fit-content;
+    z-index: 9000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+
+    opacity: 0%;
+    transition: 0.5s;
+}
+#div_caixa_menu_menus img {
+    width: 15vw;
+}
+#div_caixa_menu_menus button {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    opacity: 0%;
+}
+#caixa_boto_menu_1 {
+    top: 15%;
+}
+#caixa_boto_menu_2 {
+    top: 36%;
+}
+#caixa_boto_menu_3 {
+    bottom: 33%;
+}
+#caixa_boto_menu_4 {
+    bottom: 12%;
+}

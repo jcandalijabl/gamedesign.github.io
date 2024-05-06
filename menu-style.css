@@ -178,3 +178,23 @@
     background-color: transparent;
     width: 100%;
 }
+/*  */
+.contenidor-fons img {
+    position: absolute;
+}
+#part_fons_inferior {
+    z-index: 1;
+}
+#part_fons_superior {
+    z-index: 3;
+}
+.caixa_fons {
+    visibility: hidden;
+    z-index: 2;
+}
+#caixa_boto {
+    z-index: 4000;
+    position: absolute;
+    width: 50px;
+    height: 40px;
+}
