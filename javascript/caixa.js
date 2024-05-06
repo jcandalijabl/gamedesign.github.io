@@ -11,6 +11,8 @@ function CaixaAnimacio1(){
             caixes[i].style.visibility = "hidden";
         }
     };
+    var click_caixa = document.getElementById("part_fons_click");
+    click_caixa.style.visibility = "hidden";
     setTimeout('CaixaAnimacio2()',15);
 }
 function CaixaAnimacio2(){

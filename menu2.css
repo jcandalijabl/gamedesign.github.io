@@ -130,7 +130,11 @@ body {
     opacity: 100%;
 }
 #caixa_boto {
-    height: 100%;
+    height: 50%;
+    width: 17%;
+    margin-left: 4%;
+    margin-top: 25vh;
+    opacity: 0%;
 }
 #caixa_boto_1 {
     margin-left: 13%;
@@ -197,4 +201,8 @@ body {
 }
 #caixa_boto_menu_4 {
     bottom: 12%;
+}
+#part_fons_click {
+    position: absolute;
+    z-index: 100;
 }
