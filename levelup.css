@@ -177,14 +177,50 @@ p {
     width: 20px;
 }
 .div-levels::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #A1662F; 
-    border-radius: 5px;
+    /*box-shadow: inset 0 0 5px #A1662F; 
+    border-radius: 5px;*/
+    background: transparent;
 }
 .div-levels::-webkit-scrollbar-thumb {
-    background-color: brown;
-    background-image: url("./imatges/wooden-log-scroll.webp");
-    background-size: cover;
-    border-radius: 5px;
+    /*background-color: brown;*/
+    /*background-image: url("./imatges/wooden-log-scroll.webp"); /* Textura/imatge del scroll */
+    /*background-size: cover;
+    border-radius: 5px;*/
+    -webkit-border-radius: 10px;
+    background: transparent;
+    border-radius: 10px;
+    background: url('imatges/levelup/scroll-hs.png');
+    background-position: center;
+    background-size: 100%;
+    overflow-x: visible;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    width: 40px;
+}
+.div-levels::-webkit-scrollbar-track {
+    overflow-x: visible;
+    background: transparent;
+
+}
+.div-levels::-webkit-scrollbar {
+    overflow-x: visible;
+    background: transparent;
+}
+.div-levels::-webkit-scrollbar-button {
+    overflow-x: visible;
+    background: transparent;
+}
+.div-levels::-webkit-scrollbar-track-piece {
+    overflow-x: visible;
+    background: transparent;
+}
+.div-levels::-webkit-scrollbar-corner {
+    overflow-x: visible;
+    background: transparent;
+}
+.div-levels::-webkit-resizer {
+    overflow-x: visible;
+    background: transparent;
 }
 
 /* --------------- */
