@@ -38,7 +38,7 @@ function ComençaRedireccio() {
     var x = document.getElementById("boto-index");
     x.style.cursor = "url(./cursor/cursor-loading1.png), auto";
     setTimeout('setCursor2()', 1000); 
-    setTimeout('Redireccio()', 3000); 
+    setTimeout('Redireccio()', 2000); 
 }
 function Redireccio() {  
     window.location="./menu.html"; 
